@@ -1,5 +1,8 @@
 # Lookahead-Optimizer-by-Pytorch
 PyTorch implement of <a href="https://arxiv.org/abs/1907.08610" target="_blank">Lookahead Optimizer: k steps forward, 1 step back</a>   
+    
+    
+![avatar](src/algorithm.png)  
 
 Usage:
 ```
@@ -11,6 +14,3 @@ lookahead.zero_grad()
 loss_function(model(input), target).backward() # Self-defined loss function
 lookahead.step()
 ```
-  
-  
-![avatar](src/algorithm.png)  
