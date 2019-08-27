@@ -2,7 +2,7 @@
 PyTorch implement of <a href="https://arxiv.org/abs/1907.08610" target="_blank">Lookahead Optimizer: k steps forward, 1 step back</a>   
     
    
-### Pseudocode for Lookahead Optimizer Algorithm
+### Pseudocode for Lookahead Optimizer Algorithm:
 ![avatar](src/algorithm.png)  
 
 ### Usage:
