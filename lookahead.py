@@ -29,10 +29,6 @@ class Lookahead(Optimizer):
             slow += (fast.data - slow) * self.alpha
             fast.data.copy_(slow)
     
-    def update_lookahead(self):
-        for group in self.param_groups:
-            self.update(group)
-
     def step(self, closure=None):
         loss = self.optimizer.step(closure)
         for group in self.param_groups:
