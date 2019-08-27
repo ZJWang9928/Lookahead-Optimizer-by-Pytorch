@@ -3,6 +3,8 @@ PyTorch implement of <a href="https://arxiv.org/abs/1907.08610" target="_blank">
 
 Usage:
 ```
+import lookahead
+
 base_opt = torch.optim.Adam(model.parameters(), lr=1e-3, betas=(0.9, 0.999)) # Any optimizer
 lookahead = Lookahead(base_opt, k=5, alpha=0.5) # Initialize Lookahead
 lookahead.zero_grad()
