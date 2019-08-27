@@ -11,3 +11,6 @@ lookahead.zero_grad()
 loss_function(model(input), target).backward() # Self-defined loss function
 lookahead.step()
 ```
+  
+  
+![avatar](src/algorithm.png)  
