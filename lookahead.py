@@ -7,9 +7,9 @@ import warnings
 class Lookahead(Optimizer):
     def __init__(self, optimizer, k=5, alpha=0.5):
         if not 0.0 <= alpha <= 1.0:
-            raise ValueError(f'Invalid slow update rate: {alpha}')
+            raise ValueError(f'Invalid slow update rate: {0}'.format(alpha))
         if not 1 <= k:
-            raise ValueError(f'Invalid lookahead steps: {k}')
+            raise ValueError(f'Invalid lookahead steps: {0}'.format(k))
         self.optimizer = optimizer
         self.k = k
         self.alpha = alpha
